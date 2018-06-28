@@ -5,3 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+meals = %w[Breakfast Snacks Lunch Dinner]
+
+meals.each do |meal|
+  Meal.create({name: meal})
+end
